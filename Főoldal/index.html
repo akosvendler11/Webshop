@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Főoldal</title>
+    <script src="theme.js"></script>
+    <link rel="stylesheet" href="style.css" >
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!--hamburger-->
+    <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show');
+             });
+        });
+    </script>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <nav>
+        
+        <label class="logo"><img src=""></label>
+        
+            <ul>
+                <li><a class="active" href="#">PC</a></li>
+                <li><a href="#">PlayStation</a></li>
+                <li><a href="#">Xbox</a></li>
+            </ul>
+            <label id="icon">
+                <i class="fas fa-bars"></i>
+            
+            </label>
+        
+</nav>
 
+<!--Light mode-->
+<style>
+    body {   
+      padding: 0;
+      background-color: white;
+      color: black;
+      font-size: 25px;
+    }
+    
+    .dark-mode {
+      background-color: #2b2b2b;
+      color: white;
+    }
+    </style>
+    </head>
+    <body>   
+        <i onclick="myFunction()" style="position: relative; top: -65px; left: 10px;" class="fas fa-lightbulb fa-2x"></i>
+    
+    <script>
+    function myFunction() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+    </script>
+
+</body>
+</html>
