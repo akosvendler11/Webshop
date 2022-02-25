@@ -17,6 +17,39 @@
         </head>
         
         <body style="background-image:url(https://wallpaperaccess.com/full/537582.jpg);">
+            
+                <nav>
+
+        <label class="logo"></label>
+            <ul>
+                <li><a  href="#"><i class="fas fa-desktop"></i> PC</a></li>
+                <li><a href="#"><i class="fab fa-playstation"></i> PlayStation</a></li>
+                <li><a href="#"><i class="fab fa-xbox"></i>Xbox</a></li>
+                
+            </ul>
+            <label id="icon">
+                <i class="fas fa-bars"></i>
+            
+            </label>
+            <a style="position: relative; left: 1530px;  " href="#"><i class="fas fa-user fa-2x"></i></a>
+            <a style="position: relative;  left: 1550px; " href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
+            <div style="position: relative; top: -70px;" class="search">
+                <div class="icon"></div>     
+                <div class="input">
+                    <input type="text" placeholder="Keresés" id="mysearch">
+                </div> 
+                <span class="clear" onclick="document.getElementById
+                ('mysearch').value = ' ' "></span>
+            </div>
+            <script>
+                const icon = document.querySelector('.icon');
+                const search = document.querySelector('.search');
+                icon.onclick = function(){
+                    search.classList.toggle('active')
+                }
+            </script>    
+        </nav>
+            
           <div class="container">
             <div class="heading">
               <h1>PlayStation</h1>
