@@ -18,9 +18,7 @@
              });
         });
     </script>
-    <script>
-        
-    </script>
+
 </head>
 <body>
     <nav>
@@ -38,8 +36,75 @@
             </label>
             <a style="position: relative; left: 1400px; top: -35px;" href="https://akosvendler11.github.io/Webshop/F%C5%91oldal/Reg/index.html"><i class="fas fa-user fa-2x"></i></a>
             <a style="position: relative; left: 1430px; top: -35px;" href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
-            
+                        <div style="position: relative; top: -70px;" class="search">
+                <div class="icon"></div>     
+                <div class="input">
+                    <input type="text" placeholder="Keresés" id="mysearch">
+                </div> 
+                <span class="clear" onclick="document.getElementById
+                ('mysearch').value = ' ' "></span>
+            </div>
+            <script>
+                const icon = document.querySelector('.icon');
+                const search = document.querySelector('.search');
+                icon.onclick = function(){
+                    search.classList.toggle('active')
+                }
+            </script>    
         </nav>
+            <!--image slider start-->
+        <div class="slider">
+            <div class="slides">
+                <!--radio button start-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!--radio button end-->
+                <!--slider images start-->
+                <div class="slide first">
+                    <img src="peti.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="sallai.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="zatu.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="zsombor a.png" alt="">
+                </div>
+                <!--slider images end-->
+                <!--automatic navigation start-->
+                <div class="navigation-auto" id="gomb">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!--automatic navigation end-->
+            </div>
+            <!--manual navigation start-->
+            <div class="navigation-manuel">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!--manual navigation end-->
+        </div>
+        <!--image slider end-->
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+              document.getElementById('radio' + counter).checked = true;
+              counter++;
+              if(counter > 4){
+                counter = 1;
+              }  
+            }, 5000);
+            </script>
+
 
 
 
