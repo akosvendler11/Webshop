@@ -24,6 +24,19 @@
             </label>
             <a style="position: relative; left: 1600px; top: 20px;" href="https://akosvendler11.github.io/Webshop/F%C5%91oldal/Reg/index.html"><i class="fas fa-user fa-2x"></i></a>
             <a style="position: relative; left: 1630px; top: 20px;" href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
+       <script>
+    window.localStorage.clear();
+    clickCounter();
+
+function clickCounter() {
+  if (localStorage.clickcount) {
+    localStorage.clickcount = Number(localStorage.clickcount)+1;
+  } else {
+    localStorage.clickcount = 0;
+  }
+  document.getElementById("demo").innerHTML = localStorage.clickcount;
+}
+  </script>
                         <div style="position: relative; top: -13px;" class="search">
                 <div class="icon"></div>     
                 <div class="input">
@@ -40,19 +53,7 @@
                 }
             </script>    
         </nav>
-   <script>
-    window.localStorage.clear();
-    clickCounter();
 
-function clickCounter() {
-  if (localStorage.clickcount) {
-    localStorage.clickcount = Number(localStorage.clickcount)+1;
-  } else {
-    localStorage.clickcount = 0;
-  }
-  document.getElementById("demo").innerHTML = localStorage.clickcount;
-}
-  </script>
   <div class="container">
     <div class="heading">
       <h1 style="text-align: left; color: white;">PlayStation 4 Slim</h1>
