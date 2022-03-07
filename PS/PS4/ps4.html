@@ -4,27 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PlayStation 4</title>
-
-</head>
-<link rel="stylesheet" href="https://akosvendler11.github.io/Webshop/PS/PS4/Ps4.css">
+  <link rel="stylesheet" href="https://akosvendler11.github.io/Webshop/PS/PS4/Ps4.css">
   <link rel="stylesheet" href="https://akosvendler11.github.io/Webshop/PS/PS4/style.css">
   <link rel="stylesheet" href="https://akosvendler11.github.io/Webshop/PS/PS4/kereso.css">
+  <link rel="stylesheet" href="main.js">
+</head>
+
 <body>
     <body style="background-image:url(https://wallpaperaccess.com/full/1409722.jpg);"></body>
-  <nav>
-            <ul>
-                <li><a href="https://akosvendler11.github.io/Webshop/PC/index.html"><i class="fas fa-desktop"></i> PC</a></li>
-                <li><a href="https://akosvendler11.github.io/Webshop/PS/index.html"><i class="fab fa-playstation"></i> PlayStation</a></li>
-                <li><a href="https://akosvendler11.github.io/Webshop/Xbox/index.html"><i class="fab fa-xbox"></i>Xbox</a></li>
-                
-            </ul>
-            <label id="icon">
-                <i class="fas fa-bars"></i>
-            
-            </label>
-            <a style="position: relative; left: 1600px; top: 20px;" href="https://akosvendler11.github.io/Webshop/F%C5%91oldal/Reg/index.html"><i class="fas fa-user fa-2x"></i></a>
-            <a style="position: relative; left: 1630px; top: 20px;" href="#"><i class="fas fa-shopping-cart fa-2x"><span id="demo" style="position: relative; left: 1500px;"></span></i></a>
-       <script>
+   <nav>
+    <ul>
+      <li><a  href="#"><i class="fas fa-desktop"></i> PC</a></li>
+      <li><a href="#"><i class="fab fa-playstation"></i> PlayStation</a></li>
+      <li><a href="#"><i class="fab fa-xbox"></i>Xbox</a></li>
+      
+  </ul>
+  
+  <label id="icon">
+      <i class="fas fa-bars"></i>
+  
+  </label>
+  <a><i class="fas fa-user fa-2x"></i></a>
+  <i id="iconok" ><i class="fas fa-shopping-cart fa-2x"><span id="demo" style="position: relative; left: 1500px;"></span></i></i>
+  <script>
     window.localStorage.clear();
     clickCounter();
 
@@ -37,24 +39,25 @@ function clickCounter() {
   document.getElementById("demo").innerHTML = localStorage.clickcount;
 }
   </script>
-                        <div style="position: relative; top: -13px;" class="search">
-                <div class="icon"></div>     
-                <div class="input">
-                    <input type="text" placeholder="Keresés" id="mysearch">
-                </div> 
-                <span class="clear" onclick="document.getElementById
-                ('mysearch').value = ' ' "></span>
-            </div>
-            <script>
-                const icon = document.querySelector('.icon');
-                const search = document.querySelector('.search');
-                icon.onclick = function(){
-                    search.classList.toggle('active')
-                }
-            </script>    
-        </nav>
+  <div style="position: relative; top: -10px;" class="search">
+    <div class="icon"></div>     
+      <div class="input">
+          <input type="text" placeholder="Keresés" id="mysearch">
+      </div> 
+      <span class="clear" onclick="document.getElementById
+      ('mysearch').value = ' ' "></span>
+  </div>
+  <script>
+      const icon = document.querySelector('.icon');
+      const search = document.querySelector('.search');
+      icon.onclick = function(){
+          search.classList.toggle('active')
+      }
+  </script>    
+</nav>
 
-  <div class="container">
+  
+    <div class="container">
     <div class="heading">
       <h1 style="text-align: left; color: white;">PlayStation 4 Slim</h1>
     </div>
@@ -69,7 +72,7 @@ function clickCounter() {
           <br>
           <b>100.000Ft</b>
         </br>
-          <a onclick="clickCounter()" href="#" class="btn">Kosárba</a>
+          <a onclick="clickCounter()" id="gomb" href="#" class="btn">Kosárba</a>
         </div>
       </div>
       <div class="card">
@@ -160,7 +163,7 @@ function clickCounter() {
         <p>PlayStation 4 (PS4) pro 1TB Fifa 21 Edition </p>
         <br>
         <b>180.000Ft</b>
-        <a onclick="clickCounter()" href="#" class="btn">Kosárba</a>
+        <a  href="#" class="btn">Kosárbaa</a>
       </div>
     </div>
   </div>
