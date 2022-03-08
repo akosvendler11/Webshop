@@ -25,7 +25,7 @@
   
   </label>
   <a><i class="fas fa-user fa-2x"></i></a>
-  <i id="iconok" ><i class="fas fa-shopping-cart fa-2x"><span id="demo" style="position: relative; left: 1500px;"></span></i></i>
+  <i id="iconok" ><i class="fas fa-shopping-cart fa-2x"><span id="demo" style="position: fixed; left: 1500px;"></span></i></i>
   <script>
     window.localStorage.clear();
     clickCounter();
@@ -39,7 +39,7 @@ function clickCounter() {
   document.getElementById("demo").innerHTML = localStorage.clickcount;
 }
   </script>
-  <div style="position: relative; top: -10px;" class="search">
+  <div style="position: fixed; top: -10px;" class="search">
     <div class="icon"></div>     
       <div class="input">
           <input type="text" placeholder="Keresés" id="mysearch">
