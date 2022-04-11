@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://akosvendler11.github.io/Webshop/Főoldal/style.css">
     <link rel="stylesheet" href="https://akosvendler11.github.io/Webshop/Főoldal/kepsor.css">
     <link rel="stylesheet" href="https://akosvendler11.github.io/Webshop/Főoldal/kereso.css">
+    <link rel="stylesheet" href="https://akosvendler11.github.io/Webshop/F%C5%91oldal/Reg/style.css">
 
  <!--hamburger-->
     <script>
@@ -142,7 +143,56 @@
       }
       </script>
 
+        <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+
+  <div class="Cart-Container"></div>
+
+<div class="hero">
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="login()">Bejelentkezés </button>
+        <button type="button" class="toggle-btn" onclick="register()">Regisztráció</button>
+        </div>
+
+    <form id="login"class="input-group">
+        <input type="text" class="input-field" placeholder="Felhasználónév " required>
+        <input type="text" class="input-field" placeholder="jelszó megadása " required>
+        <input type="checkbox" class="chech-box"><span>jelszó megjegyzése </span>
+        <button type="submit" class="submit-btn">bejelentkezés</button>
+    </form>
+    <form id="register" class="input-group">
+        <input type="text" class="input-field" placeholder="Felhasználónév " required>
+        <input type="email" class="input-field" placeholder="email cím" required>
+        <input type="text" class="input-field" placeholder="jelszó megadása " required>
+        <input type="checkbox" class="chech-box"><span>elfogadom az általános szerződési feltételeket</span>
+        <button type="submit" class="submit-btn">Regisztráció</button>
+    </form>
+    </div>
+</div>
+<script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+    
+    function register(){
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+    }
+    function login(){
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+    }
+   
+   
+</script>
       
+      </div>  
 
   
   
