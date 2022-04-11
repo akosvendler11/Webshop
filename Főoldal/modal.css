@@ -172,41 +172,7 @@
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
   
-  /* Modal Content */
-  .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-  }
   
-  /* The Close Button */
-  .close {
-    color: #aaaaaa;
-    position: fixed;
-    left: 1550px;
-    top: 110px;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-    .Cart-Container{
-     width: 70%;
-     height: 85%;
-     background-color: #ffffff;
-     border-radius: 20px;
-     box-shadow: Opx 25px 40px #1687d933;
-     position: fixed;
-     left: 250px;
-     
-    }
 
 
 
