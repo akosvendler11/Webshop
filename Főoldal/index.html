@@ -145,7 +145,33 @@
 
         <!-- The reg Modal -->
 <div id="regModal" class="modal">
-<script>
+
+  <!-- Modal content -->
+
+
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="login()">Bejelentkezés </button>
+        <button type="button" class="toggle-btn" onclick="register()">Regisztráció</button>
+        </div>
+
+    <form id="login"class="input-group">
+        <input type="text" class="input-field" placeholder="Felhasználónév " required>
+        <input type="text" class="input-field" placeholder="jelszó megadása " required>
+        <input type="checkbox" class="chech-box"><span>jelszó megjegyzése </span>
+        <button type="submit" class="submit-btn">bejelentkezés</button>
+    </form>
+    <form id="register" class="input-group">
+        <input type="text" class="input-field" placeholder="Felhasználónév " required>
+        <input type="email" class="input-field" placeholder="email cím" required>
+        <input type="text" class="input-field" placeholder="jelszó megadása " required>
+        <input type="checkbox" class="chech-box"><span>elfogadom az általános szerződési feltételeket</span>
+        <button type="submit" class="submit-btn">Regisztráció</button>
+    </form>
+    </div>
+</div>
+    <script>
       // Get the modal
       var modal = document.getElementById("regModal");
       
@@ -187,31 +213,6 @@
            }
          }
    </script>
-  <!-- Modal content -->
-
-
-    <div class="form-box">
-        <div class="button-box">
-            <div id="btn"></div>
-        <button type="button" class="toggle-btn" onclick="login()">Bejelentkezés </button>
-        <button type="button" class="toggle-btn" onclick="register()">Regisztráció</button>
-        </div>
-
-    <form id="login"class="input-group">
-        <input type="text" class="input-field" placeholder="Felhasználónév " required>
-        <input type="text" class="input-field" placeholder="jelszó megadása " required>
-        <input type="checkbox" class="chech-box"><span>jelszó megjegyzése </span>
-        <button type="submit" class="submit-btn">bejelentkezés</button>
-    </form>
-    <form id="register" class="input-group">
-        <input type="text" class="input-field" placeholder="Felhasználónév " required>
-        <input type="email" class="input-field" placeholder="email cím" required>
-        <input type="text" class="input-field" placeholder="jelszó megadása " required>
-        <input type="checkbox" class="chech-box"><span>elfogadom az általános szerződési feltételeket</span>
-        <button type="submit" class="submit-btn">Regisztráció</button>
-    </form>
-    </div>
-</div>
 <script>
     var x = document.getElementById("login");
     var y = document.getElementById("register");
