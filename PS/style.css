@@ -43,7 +43,6 @@ nav a{
     border-radius: 3px;
 }               
 a.active,a:hover{
-    width: fit-content;
     border: 1px solid white;
     transition: .5s;  
 }
