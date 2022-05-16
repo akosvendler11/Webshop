@@ -18,7 +18,7 @@ function torles() {
 }
 
 function kos() {
-    var list = "<tr><th style=\"width:450px\">Termék </th><th style=\"width:450px\">Mennyiség </th><th style=\"width:450px\">Ár </th></tr>\n"
+    var list = "<tr><th style=\"width:450px; font-size: 40px;\">Termék </th><th style=\"width:450px; font-size: 40px;\">Mennyiség </th><th style=\"width:450px; font-size: 40px;\">Ár </th></tr>\n"
 
     var ossz = 0;
     var darab = 0;
@@ -28,11 +28,12 @@ function kos() {
     for (var i = 0; i <= localStorage.length - 1; i++) {
         key = localStorage.key(i);
         darab = parseInt(localStorage.getItem(key));
-        list += "<tr style=\"text-align: center\"><td style=\"width:450px\">" + key + "</td><td style=\"width:450px\">" + "<button onclick='ModifyItem(\"" + key + "\", " + "prompt(\"Írjon be egy összeget\")" + ")'>" + darab + "</button>" + "</td>" + "</td><td style=\"width:450px\">" + (window[key] * darab) + " Ft" + "</td>" + "</td></tr>";
+        list += "<tr style=\"text-align: center; font-size: 20px;\"><td style=\"width:450px; font-size: 20px;\">" + key + "</td><td style=\"width:450px; font-size: 20px;\">" + "<button style:\"font-size: 20px;\" id=\"gomb\" onclick='ModifyItem(\"" + key + "\", " + "prompt(\"Írjon be egy összeget\")" + ")'>" + darab + "</button>" + "</td>" + "</td><td style=\"width:450px; font-size: 20px;\">" + (window[key] * darab) + " Ft" + "</td>" + "</td></tr>";
         ossz += window[key] * darab;
     }
 
     list += "<tr> <th>Fizetendő </th> <th> </th> <th>" + ossz + " Ft" + "</th></tr>"
+
 
 
 
