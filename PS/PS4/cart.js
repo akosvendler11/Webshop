@@ -28,7 +28,7 @@ function kos() {
     for (var i = 0; i <= localStorage.length - 1; i++) {
         key = localStorage.key(i);
         darab = parseInt(localStorage.getItem(key));
-        list += "<tr style=\"text-align: center; font-size: 20px;\"><td style=\"width:450px; font-size: 20px;\">" + key + "</td><td style=\"width:450px; font-size: 20px;\">" + "<button style:\"font-size: 20px;\" id=\"gomb\" onclick='ModifyItem(\"" + key + "\", " + "prompt(\"Írjon be egy összeget\")" + ")'>" + darab + "</button>" + "</td>" + "</td><td style=\"width:450px; font-size: 20px;\">" + (window[key] * darab) + " Ft" + "</td>" + "</td></tr>";
+        list += "<tr style=\"text-align: center; font-size: 20px;\"><td style=\"width:450px; font-size: 20px;\">" + key + "</td><td style=\"width:450px; font-size: 20px;\">" + "<button style:\"font-size: 20px;\" id=\"gombb\" onclick='ModifyItem(\"" + key + "\", " + "prompt(\"Írjon be egy összeget\")" + ")'>" + darab + "</button>" + "</td>" + "</td><td style=\"width:450px; font-size: 20px;\">" + (window[key] * darab) + " Ft" + "</td>" + "</td></tr>";
         ossz += window[key] * darab;
     }
 
