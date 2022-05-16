@@ -17,17 +17,19 @@
   /* Modal Content */
   .modal-content {
     background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
+    
+    padding: 20px ;
     border: 1px solid #888;
-    width: 80%;
+    width: 600px;
+    height: 800px;
+    border-radius: 20px;
   }
   
   /* The Close Button */
   .close {
     color: #aaaaaa;
     position: fixed;
-    left: 1550px;
+    left: 1670px;
     top: 110px;
     font-size: 28px;
     font-weight: bold;
@@ -74,6 +76,7 @@
             cursor: pointer;
             border-bottom: 1px solid #E44C4C;
        }
+
        #kuka{
          color: red;
          position: fixed;
@@ -81,15 +84,13 @@
          top: 175px;
          
        }
-
+       
        #gomb{
          background-color: white;
          border: none;
          color: #2F3841;
          font-size: 20px;
        }
-       
-
 
 
        
