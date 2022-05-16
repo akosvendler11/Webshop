@@ -81,6 +81,13 @@
          top: 175px;
          
        }
+
+       #gomb{
+         background-color: white;
+         border: none;
+         color: #2F3841;
+         font-size: 20px;
+       }
        
 
 
