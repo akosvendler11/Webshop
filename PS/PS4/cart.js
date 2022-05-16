@@ -32,7 +32,7 @@ function kos() {
         ossz += window[key] * darab;
     }
 
-    list += "<tr> <th>Fizetendő </th> <th> </th> <th>" + ossz + " Ft" + "</th></tr>"
+    list += " <hr><tr> <th>Fizetendő </th> <th> </th> <th>" + ossz + " Ft" + "</th></tr>"
 
 
 
