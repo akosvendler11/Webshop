@@ -1,11 +1,11 @@
-var PS4S5B = 100000
-var PS4S5W = 110000
-var PS4S1TBSpider = 135000
-var PS4S1TBHits = 150000
-var PS4pro1TB = 130000
-var PS4pro1TBW = 135000
-var PS4pro1TBLastOf = 150000
-var PS4pro1TBFifa = 180000
+var PS5D825 = 165000
+var PS5D825F = 189000
+var PS5D825fe = 190000
+var PS5D825Fplus = 207000
+var PS5825fe = 200000
+var PS5825F = 210000
+var PS5825FCUT = 240000
+var PS5825SPIDER = 235000
 
 function hozzaad(cucc) {
     db = Number(prompt('Írjon be egy összeget'));
