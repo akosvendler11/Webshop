@@ -72,78 +72,70 @@
        
   </ul>
 
+<!-- Trigger/Open The Modal -->
   
-
-
-    <!-- The Modal -->
-<div id="kosarModal" class="modal">
-
-  <!-- Modal content -->
-
-  <div class="Cart-Container"></div>
-    <span class="close">&times;</span>
-    <div class=”Header”>
-      <p class="Heading">Kosár</p>
-      <p class="Törlés">Összes törlése</p>
-    </div>
-      <div class="product-container">
-        <div class="product-header">
-            <h5 class="product-title">Termék</h5>
-            <h5 class="price">Ár</h5>
-            <h5 class="quantity">Darab</h5>
-            <h5 class="total">Összesen</h5>
-        </div>
-        <div class="products">
-
-        </div>
+  
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+  
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div>
+        <h1 style="font-size: 70px;" onclick="kos()">Kosár</h1>
+        <svg width="54px" height="54px" id="kuka" onclick="torles()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+          <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5Zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5ZM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06Zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528ZM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5Z"/>
+        </svg>
+        <table id="tabla">
+          <tbody>
+            <!--<tr style="font-size: 25px;">
+              <th style="width: 450px;">Termék</th>
+              <th style="width: 450px;">Mennyiség</th>
+              <th style="width: 450px;">Ár</th>
+            </tr>
+            <tr style="font-size: 20px;">
+              <th style="width: 450px;">Fizetendő</th>
+              <th style="width: 450px;"> </th>
+              <th style="width: 450px;">0 Ft</th>
+            </tr>-->
+          </tbody>
+        </table>
+        <form action="cart.html"><button type="submit" style="position: fixed; left: 45%; top: 800px;" id="tovább">Tovább a fizetéshez</button></form>
       </div>
-      
-      <script>
-        // Get the <span> element that closes the modal
-         var close = document.getElementsByClassName("Action")[0];
-           // When the user clicks on <span> (x), close the modal
-             close.onclick = function() {
-           modal1.style.display = "none";
-         }
-         
-         // When the user clicks anywhere outside of the modal, close it
-         window.onclick = function(event) {
-           if (event.target == modal1) {
-             modal1.style.display = "none";
-           }
-         }
-   </script>
+    </div>
+  
   </div>
-</div>
+  
+  <script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks the button, open the modal 
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+    
 
-<script>
-      // Get the modal
-      var modal1 = document.getElementById("kosarModal");
-      
-      // Get the button that opens the modal
-      var btn = document.getElementById("kosár");
-      
-      // Get the <span> element that closes the modal
-      var close = document.getElementsByClassName("close")[0];
-      
-      // When the user clicks the button, open the modal 
-      btn.onclick = function() {
-        modal1.style.display = "block";
-      }
-      
-      // When the user clicks on <span> (x), close the modal
-      close.onclick = function() {
-        modal1.style.display = "none";
-      }
-      
-      // When the user clicks anywhere outside of the modal, close it
-      window.onclick = function(event) {
-        if (event.target == modal1) {
-          modal1.style.display = "none";
-        }
-      }
-      </script>
-    <!--modal vege-->
+
     
 <!-- REG Modal -->
 <div id="RegModal" class="modal">
