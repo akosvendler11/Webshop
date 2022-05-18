@@ -63,7 +63,7 @@
       </li>
     
        <li class="cart">
-         <svg id="myBtn" style="color:white; position: fixed; left: 1700px; top: 15px; height: 50px; width: 50px;" xmlns="http://www.w3.org/2000/svg"  height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+         <svg id="kosár" style="color:white; position: fixed; left: 1700px; top: 15px; height: 50px; width: 50px;" xmlns="http://www.w3.org/2000/svg"  height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
             <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
           </svg>
        </li>
@@ -75,7 +75,7 @@
   
   
   <!-- The Modal -->
-  <div id="kosar" class="modal">
+  <div id="kosarModal" class="modal">
   
     <!-- Modal content -->
     <div class="modal-content">
@@ -104,33 +104,51 @@
     </div>
   
   </div>
-  
+       <script>
+           
+        // Get the <span> element that closes the modal
+         var close = document.getElementsByClassName("Action")[0];
+           // When the user clicks on <span> (x), close the modal
+             close.onclick = function() {
+           modal1.style.display = "none";
+         }
+         
+         // When the user clicks anywhere outside of the modal, close it
+         window.onclick = function(event) {
+           if (event.target == modal1) {
+             modal1.style.display = "none";
+           }
+         }
+   
+       </script>
   <script>
-  // Get the modal
-  var modal = document.getElementById("kosar");
-  
-  // Get the button that opens the modal
-  var btn = document.getElementById("myBtn");
-  
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-  
-  // When the user clicks the button, open the modal 
-  btn.onclick = function() {
-    modal.style.display = "block";
-  }
-  
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
-  
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
+ 
+      // Get the modal
+      var modal1 = document.getElementById("kosarModal");
+      
+      // Get the button that opens the modal
+      var btn = document.getElementById("kosár");
+      
+      // Get the <span> element that closes the modal
+      var close = document.getElementsByClassName("close")[0];
+      
+      // When the user clicks the button, open the modal 
+      btn.onclick = function() {
+        modal1.style.display = "block";
+      }
+      
+      // When the user clicks on <span> (x), close the modal
+      close.onclick = function() {
+        modal1.style.display = "none";
+      }
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal1) {
+          modal1.style.display = "none";
+        }
+      }
+      
   </script>
     
     
